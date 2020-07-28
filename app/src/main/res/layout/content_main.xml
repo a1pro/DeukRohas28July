@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+app:layout_behavior="@string/appbar_scrolling_view_behavior"
+tools:showIn="@layout/fragment_home">
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapView"
+        android:visibility="visible"
+        android:layout_below="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:id="@+id/off_location"
+        android:visibility="gone"
+        android:layout_below="@+id/appBar"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/enablelocation"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please enable your location"
+            android:fontFamily="@font/nunito_regular"
+            android:textSize="20sp"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enable Location"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/enable_location"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/button_back"
+            android:textSize="20sp"
+            android:layout_marginBottom="30dp"
+            android:textColor="@android:color/white"
+            android:textAllCaps="false"
+            />
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

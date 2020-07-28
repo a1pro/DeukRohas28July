@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Deuk Rohas</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="i_accept_all_terms_conditions_privacy_policy"><![CDATA[I Accept all terms Conditions & Privacy Policy]]></string>
+    <string name="address_optional">Address </string>
+    <string name="optional"> (Optional)</string>
+    <string name="mobile_number_required">Mobile Number (Required)</string>
+    <string name="confirm">Confirm</string>
+    <string name="submit">Submit</string>
+    <string name="normal_1_0">Normal($1.0)</string>
+    <string name="confirm_detail">Confirm Detail</string>
+    <string name="order_confirm">Order Confirm</string>
+    <string name="track_your_order">TRACK YOUR ORDER</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="your_address">Your Address</string>
+    <string name="_17_a_unnamed_road_phase_3b2_mohali">17/A unnamed Road Phase 3b2, Mohali</string>
+    <string name="choose_package">Choose Package</string>
+</resources>

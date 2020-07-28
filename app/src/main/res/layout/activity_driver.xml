@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/light_grey"
+    android:layout_height="match_parent"
+    tools:context=".driver.activitiesdriver.OrderDetailsDriver">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/red">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/back_image"
+                    android:src="@mipmap/errow"
+                    android:rotation="180"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:fontFamily="@font/nunito_regular"
+                    android:text="Order ID:25615"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/light_grey"
+        android:layout_below="@+id/appBar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@drawable/order_details_back"
+                android:layout_height="60dp">
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="PICKUP DETAILS"
+                     android:textSize="15sp"
+                     android:fontFamily="@font/nunito_regular"
+                     android:layout_gravity="center_vertical"
+                     android:textColor="@color/red"
+                     android:layout_margin="15dp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#FFFFFF">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Address"
+                    android:fontFamily="@font/nunito_regular"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="18sp"
+                    android:layout_marginTop="15dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="102 small town new central mall Los "
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@android:color/black"
+                    android:fontFamily="@font/nunito_regular"
+                    android:textSize="18sp"
+                    android:layout_marginTop="15dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vegas,USA"
+                    android:textColor="@android:color/black"
+                    android:layout_marginLeft="15dp"
+                    android:fontFamily="@font/nunito_regular"
+                    android:textSize="18sp"
+                    android:layout_marginTop="0dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:textColor="@android:color/black"
+                    android:layout_marginLeft="15dp"
+                    android:fontFamily="@font/nunito_regular"
+                    android:textSize="18sp"
+                    android:layout_marginTop="15dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Johan smith"
+                    android:layout_marginLeft="15dp"
+                    android:fontFamily="@font/nunito_regular"
+                    android:textSize="12sp"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mobile Number"
+                    android:textColor="@android:color/black"
+                    android:layout_marginLeft="15dp"
+                    android:fontFamily="@font/nunito_regular"
+                    android:textSize="18sp"
+                    android:layout_marginTop="15dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0147852369"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:fontFamily="@font/nunito_regular"
+                    android:textSize="12sp"
+                    android:layout_marginTop="5dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="8dp"
+                android:background="#FFFFFF">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RECIEVER DETAILS"
+                    android:fontFamily="@font/nunito_regular"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/red"
+                    android:textSize="18sp"
+                    android:layout_marginTop="15dp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Address"
+                    android:fontFamily="@font/nunito_regular"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="18sp"
+                    android:layout_marginTop="15dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="102 small town new central mall Los "
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@android:color/black"
+                    android:fontFamily="@font/nunito_regular"
+                    android:textSize="18sp"
+                    android:layout_marginTop="15dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vegas,USA"
+                    android:textColor="@android:color/black"
+                    android:layout_marginLeft="15dp"
+                    android:fontFamily="@font/nunito_regular"
+                    android:textSize="18sp"
+                    android:layout_marginTop="0dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:textColor="@android:color/black"
+                    android:layout_marginLeft="15dp"
+                    android:fontFamily="@font/nunito_regular"
+                    android:textSize="18sp"
+                    android:layout_marginTop="15dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Johan smith"
+                    android:layout_marginLeft="15dp"
+                    android:fontFamily="@font/nunito_regular"
+                    android:textSize="12sp"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mobile Number"
+                    android:textColor="@android:color/black"
+                    android:layout_marginLeft="15dp"
+                    android:fontFamily="@font/nunito_regular"
+                    android:textSize="18sp"
+                    android:layout_marginTop="15dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0147852369"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:fontFamily="@font/nunito_regular"
+                    android:textSize="12sp"
+                    android:layout_marginTop="5dp"/>
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Track Order"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/nunito_regular"
+                android:id="@+id/track_order"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/button_back"
+                android:textSize="20sp"
+                android:layout_marginBottom="30dp"
+                android:textColor="@android:color/white"
+                android:textAllCaps="false"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

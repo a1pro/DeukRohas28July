@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/common_nav"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.deukrohas.fragments.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash">
+        <action
+            app:popUpTo="@id/loginFragment"
+            app:launchSingleTop="true"
+            app:popUpToInclusive="true"
+            android:id="@+id/action_splashFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.deukrohas.fragments.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            app:popUpTo="@id/signUpFragment"
+            app:launchSingleTop="true"
+            app:popUpToInclusive="true"
+            android:id="@+id/action_loginFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_addDeliveryInfo"
+            app:destination="@id/addDeliveryInfo" />
+        <action
+            android:id="@+id/action_loginFragment_to_mainHomeFragment"
+            app:destination="@id/mainHomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.deukrohas.fragments.SignUpFragment"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" >
+        <action
+            android:id="@+id/action_signUpFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addDeliveryInfo"
+        android:name="com.deukrohas.fragments.AddDeliveryInfo"
+        android:label="fragment_add_delivery_info"
+        tools:layout="@layout/fragment_add_delivery_info" >
+    </fragment>
+    <fragment
+        android:id="@+id/mainHomeFragment"
+        android:name="com.deukrohas.fragments.MainHomeFragment"
+        android:label="fragment_main_home"
+        tools:layout="@layout/fragment_main_home" >
+    </fragment>
+    <fragment
+        android:id="@+id/itemHistoryFragment"
+        android:name="com.deukrohas.fragments.ItemHistoryFragment"
+        android:label="fragment_item_history"
+        tools:layout="@layout/fragment_item_history" >
+       </fragment>
+    <fragment
+        android:id="@+id/confirmDetails"
+        android:name="com.deukrohas.fragments.ConfirmDetails"
+        android:label="fragment_confirm_details"
+        tools:layout="@layout/fragment_confirm_details" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.deukrohas.fragments.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+    </fragment>
+
+</navigation>
